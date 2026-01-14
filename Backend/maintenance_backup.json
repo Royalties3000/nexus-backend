@@ -1,0 +1,276 @@
+{
+    "assets": [
+        {
+            "asset_id": "ASSET-BVNBU",
+            "asset_type": "Main Conveyor Line A",
+            "model_class": "Siemens Dematic MDR Conveyor",
+            "serial_key": "CONV-A-DEM-90231",
+            "responsible_teams": "[\"Mechanical Maintenance\", \"Automation & PLC Systems\"]",
+            "required_certifications": "[\"Millwright (Trade Certificate)\", \"Lockout\\u2013Tagout Certificate\", \"PLC Programming Certification (General)\"]",
+            "health_score": 100.0,
+            "risk_level": 7,
+            "last_inspection": null,
+            "created_at": "2026-01-12 10:51:12"
+        },
+        {
+            "asset_id": "ASSET-VYQBQ",
+            "asset_type": "Packaging Robot Cell 1",
+            "model_class": "FANUC M-20iD/25",
+            "serial_key": "ROB-FAN-77102",
+            "responsible_teams": "[\"Robotics & Motion Control\"]",
+            "required_certifications": "[\"Robot Manufacturer Certification (ABB / FANUC / KUKA / Yaskawa)\", \"Functional Safety Certification\", \"Lockout\\u2013Tagout Certificate\"]",
+            "health_score": 100.0,
+            "risk_level": 7,
+            "last_inspection": null,
+            "created_at": "2026-01-12 10:53:17"
+        },
+        {
+            "asset_id": "ASSET-BS9ZK",
+            "asset_type": "MCC Room 1",
+            "model_class": "Siemens SIVACON S8",
+            "serial_key": "MCC-SIV-33819",
+            "responsible_teams": "[\"Electrical Maintenance\"]",
+            "required_certifications": "[\"Electrician (Trade Certificate)\", \"Electrical Switching Authorization (LV)\", \"Electrical Switching Authorization (MV)\", \"Arc Flash Safety Training Certificate\"]",
+            "health_score": 100.0,
+            "risk_level": 10,
+            "last_inspection": null,
+            "created_at": "2026-01-12 10:55:15"
+        },
+        {
+            "asset_id": "ASSET-QI4ZT",
+            "asset_type": "Boiler Plant",
+            "model_class": "Cleaver-Brooks CB-700",
+            "serial_key": "BOIL-CB-55120",
+            "responsible_teams": "[\"Utilities & Facilities Engineering\"]",
+            "required_certifications": "[\"Boiler Operator Certificate\", \"Pressure Equipment Regulations (PER) Competency\", \"GCC Mechanical or Electrical Engineer (Factories)\"]",
+            "health_score": 100.0,
+            "risk_level": 10,
+            "last_inspection": null,
+            "created_at": "2026-01-12 10:57:40"
+        },
+        {
+            "asset_id": "ASSET-HUV4O",
+            "asset_type": "Compressed Air System",
+            "model_class": "Atlas Copco GA75 VSD+",
+            "serial_key": "AIR-ACP-88210",
+            "responsible_teams": "[\"Utilities & Facilities Engineering\"]",
+            "required_certifications": "[\"Mechanical Fitter (Trade Certificate)\", \"Electrical Switching Authorization\", \"Lockout\\u2013Tagout Certificate\"]",
+            "health_score": 100.0,
+            "risk_level": 5,
+            "last_inspection": null,
+            "created_at": "2026-01-12 10:59:33"
+        },
+        {
+            "asset_id": "ASSET-Q2UEV",
+            "asset_type": "Main PLC Rack",
+            "model_class": "Siemens S7-1500",
+            "serial_key": "PLC-S7-1500-99213",
+            "responsible_teams": "[\"Automation & PLC Systems\"]",
+            "required_certifications": "[\"PLC Programming Certification (General)\", \"OEM PLC Platform Certification\", \"Functional Safety (IEC 61508 / ISO 13849)\"]",
+            "health_score": 100.0,
+            "risk_level": 7,
+            "last_inspection": null,
+            "created_at": "2026-01-12 11:01:15"
+        },
+        {
+            "asset_id": "ASSET-921NM",
+            "asset_type": "CNC MILLING",
+            "model_class": "Haas VF-4",
+            "serial_key": "CNC-HAAS-44129",
+            "responsible_teams": "[\"Robotics & Motion Control\"]",
+            "required_certifications": "[\"CNC Controller Certification\", \"Millwright (Trade Certificate)\", \"Lockout\\u2013Tagout Certificate\"]",
+            "health_score": 100.0,
+            "risk_level": 7,
+            "last_inspection": null,
+            "created_at": "2026-01-12 11:03:25"
+        },
+        {
+            "asset_id": "ASSET-KKMWL",
+            "asset_type": "Tank Farm Level Sensors",
+            "model_class": "Endress+Hauser Prosonic",
+            "serial_key": "INST-ET-11987",
+            "responsible_teams": "[\"Instrumentation & Control (I&C)\"]",
+            "required_certifications": "[\"Instrumentation Technician (Trade Certificate)\", \"IECEx 001 / 004 / 007\", \"Confined Space Entry Certificate\"]",
+            "health_score": 100.0,
+            "risk_level": 7,
+            "last_inspection": null,
+            "created_at": "2026-01-12 11:05:14"
+        },
+        {
+            "asset_id": "ASSET-MYXPN",
+            "asset_type": "HV Transformer",
+            "model_class": "ABB 5MVA Oil-Cooled",
+            "serial_key": "TRF-ABB-55001",
+            "responsible_teams": "[\"Electrical Maintenance\"]",
+            "required_certifications": "[\"Electrical Switching Authorization (HV)\", \"Responsible Person (Electrical)\", \"GCC Electrical Engineer (Factories)\"]",
+            "health_score": 100.0,
+            "risk_level": 9,
+            "last_inspection": null,
+            "created_at": "2026-01-12 11:07:29"
+        },
+        {
+            "asset_id": "ASSET-OBXJR",
+            "asset_type": "Cooling Tower",
+            "model_class": "Marley NC Series",
+            "serial_key": "COOL-MAR-67234",
+            "responsible_teams": "[\"Mechanical Maintenance\"]",
+            "required_certifications": "[\"Mechanical Fitter (Trade Certificate)\", \"Working at Heights Certificate\", \"Lockout\\u2013Tagout Certificate\"]",
+            "health_score": 100.0,
+            "risk_level": 5,
+            "last_inspection": null,
+            "created_at": "2026-01-12 11:09:07"
+        }
+    ],
+    "engineers": [
+        {
+            "engineer_id": "ENG-1999",
+            "name": "Thabo Mokoena",
+            "team": "Electrical Maintenance",
+            "certifications": "[\"Electrician (Trade Certificate)\", \"Electrical Switching Authorization (LV)\", \"Arc Flash Safety Training Certificate\", \"Lockout\\u2013Tagout Certificate\"]",
+            "skill_matrix": "{\"repairSpeed\": 8, \"diagnostics\": 9, \"troubleshooting\": 8}",
+            "fatigue": 12.25,
+            "availability": "Day",
+            "created_at": "2026-01-12 11:11:23"
+        },
+        {
+            "engineer_id": "ENG-3113",
+            "name": "Ayesha Patel",
+            "team": "Automation & PLC Systems",
+            "certifications": "[\"PLC Programming Certification (General)\", \"Safety PLC Programming Certification\"]",
+            "skill_matrix": "{\"repairSpeed\": 7, \"diagnostics\": 9, \"troubleshooting\": 9}",
+            "fatigue": 13.849999999999998,
+            "availability": "Day",
+            "created_at": "2026-01-12 11:13:15"
+        },
+        {
+            "engineer_id": "ENG-6696",
+            "name": "Kabelo Dlamini",
+            "team": "Mechanical Maintenance",
+            "certifications": "[\"Millwright (Trade Certificate)\", \"Mechanical Fitter (Trade Certificate)\", \"Hot Work Permit Certification\", \"Lockout\\u2013Tagout Certificate\"]",
+            "skill_matrix": "{\"repairSpeed\": 9, \"diagnostics\": 7, \"troubleshooting\": 8}",
+            "fatigue": 10.95,
+            "availability": "Night",
+            "created_at": "2026-01-12 11:15:28"
+        },
+        {
+            "engineer_id": "ENG-5082",
+            "name": "Johan van Wyk",
+            "team": "Utilities & Facilities Engineering",
+            "certifications": "[\"Boiler Operator Certificate\", \"Pressure Equipment Regulations (PER) Competency\", \"Mechanical Fitter (Trade Certificate)\"]",
+            "skill_matrix": "{\"repairSpeed\": 7, \"diagnostics\": 8, \"troubleshooting\": 7}",
+            "fatigue": 13.849999999999998,
+            "availability": "Day",
+            "created_at": "2026-01-12 11:17:19"
+        },
+        {
+            "engineer_id": "ENG-8987",
+            "name": "Nomsa Khumalo",
+            "team": "Instrumentation & Control (I&C)",
+            "certifications": "[\"Instrumentation Technician (Trade Certificate)\", \"IECEx 001 / 004 / 007\", \"Calibration Technician Certification\"]",
+            "skill_matrix": "{\"repairSpeed\": 6, \"diagnostics\": 9, \"troubleshooting\": 8}",
+            "fatigue": 10.666666666666666,
+            "availability": "Swing",
+            "created_at": "2026-01-12 11:18:25"
+        },
+        {
+            "engineer_id": "ENG-6658",
+            "name": "Sipho Ndlovu",
+            "team": "Robotics & Motion Control",
+            "certifications": "[\"Robot Manufacturer Certification (ABB / FANUC / KUKA / Yaskawa)\", \"CNC Controller Certification\", \"Functional Safety Certification\"]",
+            "skill_matrix": "{\"repairSpeed\": 8, \"diagnostics\": 8, \"troubleshooting\": 9}",
+            "fatigue": 4.083333333333333,
+            "availability": "Day",
+            "created_at": "2026-01-12 11:20:17"
+        },
+        {
+            "engineer_id": "ENG-6917",
+            "name": "Pieter Botha",
+            "team": "Reliability & Asset Engineering",
+            "certifications": "[\"Certified Maintenance & Reliability Professional (CMRP)\", \"Vibration Analysis (Cat I\\u2013IV)\", \"Infrared Thermography Certification\"]",
+            "skill_matrix": "{\"repairSpeed\": 5, \"diagnostics\": 9, \"troubleshooting\": 9}",
+            "fatigue": 0.0,
+            "availability": "Day",
+            "created_at": "2026-01-12 11:22:04"
+        },
+        {
+            "engineer_id": "ENG-6245",
+            "name": "Lebohang Maseko",
+            "team": "Technical Support / Breakdown Response",
+            "certifications": "[\"Multi-Skilled Artisan Certification\", \"Electrician (Trade Certificate)\", \"Millwright (Trade Certificate)\", \"Lockout\\u2013Tagout Certificate\"]",
+            "skill_matrix": "{\"repairSpeed\": 9, \"diagnostics\": 7, \"troubleshooting\": 8}",
+            "fatigue": 0.0,
+            "availability": "Night",
+            "created_at": "2026-01-12 11:23:58"
+        },
+        {
+            "engineer_id": "ENG-8462",
+            "name": "Farai Chikore",
+            "team": "Electrical Maintenance",
+            "certifications": "[\"Electrician (Trade Certificate)\", \"Electrical Switching Authorization (LV)\"]",
+            "skill_matrix": "{\"repairSpeed\": 7, \"diagnostics\": 8, \"troubleshooting\": 7}",
+            "fatigue": 0.0,
+            "availability": "Swing",
+            "created_at": "2026-01-12 11:25:36"
+        },
+        {
+            "engineer_id": "ENG-3816",
+            "name": "Andre Coetzee",
+            "team": "Engineering & Maintenance Management",
+            "certifications": "[\"GCC Mechanical or Electrical Engineer (Factories)\", \"ISO 9001 / 45001 Auditor\", \"ECSA Registration (Professional)\"]",
+            "skill_matrix": "{\"repairSpeed\": 4, \"diagnostics\": 9, \"troubleshooting\": 8}",
+            "fatigue": 0.0,
+            "availability": "Day",
+            "created_at": "2026-01-12 11:27:12"
+        },
+        {
+            "engineer_id": "ENG-SYS-0",
+            "name": "Specialist A",
+            "team": "Power Systems",
+            "certifications": "[\"High Voltage L3\"]",
+            "skill_matrix": "{}",
+            "fatigue": 0.33614075005511745,
+            "availability": "Day",
+            "created_at": "2026-01-12 11:55:34"
+        },
+        {
+            "engineer_id": "ENG-SYS-1",
+            "name": "Specialist B",
+            "team": "Nexus Safety",
+            "certifications": "[\"Hydraulic Systems\"]",
+            "skill_matrix": "{}",
+            "fatigue": 0.014917759706831646,
+            "availability": "Day",
+            "created_at": "2026-01-12 11:55:34"
+        },
+        {
+            "engineer_id": "ENG-SYS-2",
+            "name": "Specialist C",
+            "team": "Power Systems",
+            "certifications": "[\"Cyber-Physical Security\"]",
+            "skill_matrix": "{}",
+            "fatigue": 0.15812755442545182,
+            "availability": "Day",
+            "created_at": "2026-01-12 11:55:34"
+        },
+        {
+            "engineer_id": "ENG-SYS-3",
+            "name": "Specialist D",
+            "team": "Automation Unit",
+            "certifications": "[\"Hydraulic Systems\"]",
+            "skill_matrix": "{}",
+            "fatigue": 0.3621288890329269,
+            "availability": "Day",
+            "created_at": "2026-01-12 11:55:34"
+        },
+        {
+            "engineer_id": "ENG-SYS-4",
+            "name": "Specialist E",
+            "team": "Nexus Safety",
+            "certifications": "[\"High Voltage L3\"]",
+            "skill_matrix": "{}",
+            "fatigue": 0.25003091578795084,
+            "availability": "Day",
+            "created_at": "2026-01-12 11:55:34"
+        }
+    ]
+}

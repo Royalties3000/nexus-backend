@@ -1,0 +1,15 @@
+-- ADD TIMESTAMP LIFECYCLE TRACKING
+ALTER TABLE assignments 
+ADD COLUMN signal_received_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+ADD COLUMN actual_start_at TIMESTAMP NULL,
+ADD COLUMN actual_completed_at TIMESTAMP NULL,
+ADD COLUMN total_lead_time_minutes INTEGER NULL;
+
+-- CREATE AUDIT LOG TRIGGER
+CREATE TABLE audit_logs (
+    id SERIAL PRIMARY KEY,
+    assignment_id TEXT,
+    event_type TEXT, -- 'SIGNAL', 'START', 'COMPLETED'
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    payload JSONB
+);

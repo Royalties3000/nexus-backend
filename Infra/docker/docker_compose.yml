@@ -1,0 +1,21 @@
+
+version: "3.8"
+services:
+	backend:
+		build:
+			context: ..
+			dockerfile: Infra/docker/backend.Dockfile
+		image: maintenance-orchestrator-backend:latest
+		ports:
+			- "8000:8000"
+		environment:
+			- PYTHONUNBUFFERED=1
+		volumes:
+			- ..:/app:rw
+
+	# frontend:
+	#   build:
+	#     context: ..
+	#     dockerfile: Infra/docker/frontend.Dockfile
+	#   ports:
+	#     - "3000:3000"

@@ -1,17 +1,9 @@
-# Core Framework
-fastapi==0.109.0
-uvicorn[standard]==0.27.0
-
-# Production Server (Required for Render)
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
 gunicorn==21.2.0
-
-# Database & ORM
-sqlalchemy==2.0.25
-# psycopg2-binary is required to connect to Supabase/PostgreSQL
-psycopg2-binary==2.9.9
-
-# Utilities
-pydantic==2.5.3
-pydantic-settings==2.1.0
+sqlalchemy>=2.0.30
+psycopg2-binary>=2.9.9
+pydantic>=2.9.0
+pydantic-settings>=2.5.0
 python-dotenv==1.0.1
-python-multipart==0.0.6
+python-multipart>=0.0.9

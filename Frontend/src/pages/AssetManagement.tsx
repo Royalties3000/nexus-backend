@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { API_BASE } from "../api/client";
 import { Plus, Award, Trash2, X, Check, Database, Shield, Users, Activity, Briefcase } from "lucide-react";
 
 // --- DATA MAPPING ---
@@ -56,7 +57,7 @@ export default function AssetManagement() {
 
   const fetchAssets = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:8000/assets");
+      const response = await fetch(`${API_BASE}/assets`);
       const data = await response.json();
       setAssets(Array.isArray(data) ? data : []);
     } catch (err) { console.error("FETCH_ERROR:", err); }
@@ -71,7 +72,7 @@ export default function AssetManagement() {
     
     try {
       // Build URL explicitly to avoid trailing slash redirects
-      const url = `http://127.0.0.1:8000/assets/${id}`;
+      const url = `${API_BASE}/assets/${id}`;
       
       const res = await fetch(url, { 
         method: "DELETE",
@@ -98,7 +99,7 @@ export default function AssetManagement() {
     if (formData.responsible_teams.length === 0) return alert("Select at least one division.");
     setLoading(true);
     try {
-      const response = await fetch("http://127.0.0.1:8000/assets/add", {
+      const response = await fetch(`${API_BASE}/assets/add`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

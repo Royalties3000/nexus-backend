@@ -4,6 +4,7 @@ import {
   RefreshCw, X, Map as MapIcon, List, Maximize2, Minimize2,
   BrainCircuit, TrendingDown, ZoomIn, ZoomOut, Crosshair
 } from "lucide-react";
+import { API_BASE } from "../api/client";
 import { AlertPanel } from "../components/AlertPanel";
 import AssetList from "../components/AssetList";
 
@@ -51,8 +52,8 @@ export default function Dashboard() {
   const refreshData = async () => {
     try {
       const [assetsRes, engRes, alertRes, readyRes] = await Promise.all([
-        fetch("http://127.0.0.1:8000/assets"), fetch("http://127.0.0.1:8000/engineers"),
-        fetch("http://127.0.0.1:8000/alerts"), fetch("http://127.0.0.1:8000/analysis/readiness")
+        fetch(`${API_BASE}/assets`), fetch(`${API_BASE}/engineers`),
+        fetch(`${API_BASE}/alerts`), fetch(`${API_BASE}/analysis/readiness`)
       ]);
       if (assetsRes.ok && engRes.ok && alertRes.ok && readyRes.ok) {
         const assets = await assetsRes.json();
@@ -67,11 +68,11 @@ export default function Dashboard() {
     } catch (err) { console.error("Data Fetch Error", err); }
   };
 
-  const triggerChaos = async () => { await fetch("http://127.0.0.1:8000/assets/chaos", { method: "POST" }); refreshData(); };
-  const resetSystems = async () => { await fetch("http://127.0.0.1:8000/assets/reset-health", { method: "POST" }); refreshData(); };
+  const triggerChaos = async () => { await fetch(`${API_BASE}/assets/chaos`, { method: "POST" }); refreshData(); };
+  const resetSystems = async () => { await fetch(`${API_BASE}/assets/reset-health`, { method: "POST" }); refreshData(); };
   const runSchedule = async () => {
     setRunning(true);
-    try { await fetch("http://127.0.0.1:8000/schedule", { method: "POST" }); refreshData(); } finally { setRunning(false); }
+    try { await fetch(`${API_BASE}/schedule`, { method: "POST" }); refreshData(); } finally { setRunning(false); }
   };
 
   return (

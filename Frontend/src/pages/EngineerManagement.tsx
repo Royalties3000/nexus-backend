@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { API_BASE } from "../api/client";
 import { Header } from "../components/Header";
 
 // --- DATA MAPPING ---
@@ -50,7 +51,7 @@ export default function EngineerManagement() {
 
   async function fetchEngineers() {
     try {
-      const res = await fetch("http://127.0.0.1:8000/engineers");
+      const res = await fetch(`${API_BASE}/engineers`);
       if (res.ok) {
         const data = await res.json();
         setEngineers(data);
@@ -68,7 +69,7 @@ export default function EngineerManagement() {
         engineer_id: `ENG-${Math.floor(Math.random() * 9000 + 1000)}`,
         fatigue: 0,
       };
-      const res = await fetch("http://127.0.0.1:8000/engineers", {
+      const res = await fetch(`${API_BASE}/engineers`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newEngineer),
@@ -86,7 +87,7 @@ export default function EngineerManagement() {
   async function handleDeleteEngineer(id: string) {
     if (!window.confirm(`PROMPT: Confirm permanent decommissioning of ${id}?`)) return;
     try {
-      const res = await fetch(`http://127.0.0.1:8000/engineers/${id}`, { method: "DELETE" });
+      const res = await fetch(`${API_BASE}/engineers/${id}`, { method: "DELETE" });
       if (res.ok) setEngineers(prev => prev.filter(e => e.engineer_id !== id));
       if (selectedEngineer?.engineer_id === id) setSelectedEngineer(null);
     } catch (err) {

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Header } from "../components/Header";
+import { API_BASE } from "../api/client";
 import { Timer, Activity, CheckCircle2, AlertTriangle, Zap, ShieldCheck } from "lucide-react";
 
 interface AuditEntry {
@@ -37,7 +38,7 @@ export default function AuditLog() {
 
   async function fetchAuditLog() {
     try {
-      const res = await fetch("http://127.0.0.1:8000/audit");
+      const res = await fetch(`${API_BASE}/audit`);
       if (res.ok) {
         const data = await res.json();
         setEntries(Array.isArray(data) ? data : []);

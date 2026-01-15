@@ -1,7 +1,11 @@
-export const API_BASE = "http://127.0.0.1:8000";
+export const API_BASE = (import.meta.env.VITE_API_URL ?? "http://127.0.0.1:8000").replace(/\/+$/g, "");
+
+function buildUrl(path: string) {
+  return `${API_BASE}${path.startsWith("/") ? path : `/${path}`}`;
+}
 
 export async function apiGet<T>(path: string): Promise<T> {
-  const res = await fetch(`${API_BASE}${path}`);
+  const res = await fetch(buildUrl(path));
 
   if (!res.ok) {
     const text = await res.text();
@@ -12,7 +16,7 @@ export async function apiGet<T>(path: string): Promise<T> {
 }
 
 export async function apiPost<T>(path: string, body?: unknown): Promise<T> {
-  const res = await fetch(`${API_BASE}${path}`, {
+  const res = await fetch(buildUrl(path), {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: body ? JSON.stringify(body) : undefined,

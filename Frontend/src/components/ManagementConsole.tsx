@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { API_BASE } from "../api/client";
 
 export function ManagementConsole() {
   const [assetName, setAssetName] = useState("");
@@ -13,7 +14,7 @@ export function ManagementConsole() {
       is_operational: true
     };
 
-    await fetch('http://127.0.0.1:8000/assets/add', {
+    await fetch(`${API_BASE}/assets/add`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newAsset)

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { API_BASE } from "../api/client";
 import { Header } from "../components/Header";
 import { SchedulerConsole } from "../components/SchedulerConsole";
 import { CheckCircle2, AlertOctagon, Zap, Clock, ArrowLeft, Calendar as CalIcon, User } from "lucide-react";
@@ -32,7 +33,7 @@ export default function ScheduleView() {
   const fetchAssignments = async () => {
     try {
       setLoading(true);
-      const response = await fetch("http://127.0.0.1:8000/assignments");
+      const response = await fetch(`${API_BASE}/assignments`);
       const data = await response.json();
 
       const normalized = (data || []).map((d: any) => {
@@ -68,7 +69,7 @@ export default function ScheduleView() {
   const handleComplete = async (orderId: string) => {
     setCompletingId(orderId);
     try {
-      const res = await fetch(`http://127.0.0.1:8000/assignments/${orderId}/complete`, { method: 'PUT' });
+      const res = await fetch(`${API_BASE}/assignments/${orderId}/complete`, { method: 'PUT' });
       if (res.ok) setAssignments(prev => prev.filter(a => a.id !== orderId));
     } catch (err) { console.error(err); } 
     finally { setCompletingId(null); }
